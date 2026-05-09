@@ -1,0 +1,26 @@
+[
+  {
+    "id": "post-001",
+    "title": "Bienvenido a mi Blog Personal",
+    "content": "Este es mi primer artículo en este blog. Aquí compartiré mis pensamientos, experiencias y conocimientos sobre desarrollo web, tecnología y otros temas que me apasionan. ¡Espero que disfrutes la lectura!",
+    "author": "admin",
+    "createdAt": "2025-01-15T10:00:00.000Z",
+    "updatedAt": "2025-01-15T10:00:00.000Z"
+  },
+  {
+    "id": "post-002",
+    "title": "Los Fundamentos de JavaScript Moderno",
+    "content": "JavaScript ha evolucionado enormemente en los últimos años. Con la llegada de ES6 y versiones posteriores, hemos ganado herramientas poderosas como destructuración, spread operator, arrow functions, promesas y async/await. Dominar estos conceptos es esencial para cualquier desarrollador frontend actual.",
+    "author": "admin",
+    "createdAt": "2025-01-18T14:30:00.000Z",
+    "updatedAt": "2025-01-18T14:30:00.000Z"
+  },
+  {
+    "id": "post-003",
+    "title": "CSS Grid vs Flexbox: Cuándo Usar Cada Uno",
+    "content": "Tanto CSS Grid como Flexbox son herramientas increíbles para layouts modernos. Flexbox es ideal para distribuir elementos en una sola dimensión (fila o columna), mientras que Grid brilla en diseños bidimensionales. La mejor práctica es usarlos complementándose: Grid para la estructura general de la página y Flexbox para componentes internos como navegaciones o tarjetas.",
+    "author": "admin",
+    "createdAt": "2025-01-22T09:15:00.000Z",
+    "updatedAt": "2025-01-22T09:15:00.000Z"
+  }
+]
