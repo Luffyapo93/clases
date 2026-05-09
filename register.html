@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrarse — Mi Blog</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Fondo decorativo -->
+  <div class="bg-pattern"></div>
+  <div class="dot-grid"></div>
+
+  <main class="auth-page">
+    <div class="auth-card">
+      <div class="auth-header">
+        <div class="auth-logo">B</div>
+        <h1>Crear una cuenta</h1>
+        <p>Registrate para comenzar a publicar</p>
+      </div>
+
+      <form id="register-form" onsubmit="event.preventDefault(); Auth.register(this);">
+        <div class="form-group">
+          <label class="form-label" for="reg-username">Nombre de usuario</label>
+          <input type="text" class="form-input" id="reg-username" placeholder="ej: mi_usuario" autocomplete="username" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="reg-displayname">Nombre para mostrar</label>
+          <input type="text" class="form-input" id="reg-displayname" placeholder="ej: Juan Perez" autocomplete="name" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="reg-password">Contrasena</label>
+          <input type="password" class="form-input" id="reg-password" placeholder="Minimo 6 caracteres" autocomplete="new-password" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="reg-confirm">Confirmar contrasena</label>
+          <input type="password" class="form-input" id="reg-confirm" placeholder="Repite tu contrasena" autocomplete="new-password" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block btn-lg" style="margin-top: 8px;">
+          Crear cuenta
+        </button>
+      </form>
+
+      <div class="auth-footer">
+        Ya tienes una cuenta?
+        <a href="login.html" style="margin-left: 4px;">Inicia sesion</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="js/storage.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/blog.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    // Inicializar y redirigir si ya hay sesión
+    App.init();
+    Auth.redirectIfLoggedIn();
+  </script>
+</body>
+</html>
